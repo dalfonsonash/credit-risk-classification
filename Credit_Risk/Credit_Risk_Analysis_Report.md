@@ -12,17 +12,17 @@ In this section, describe the analysis you completed for the machine learning mo
   may become more biased toward predicting the majority class.  The class imbalance was addressed by using oversampling, which helps the model learn better from the minority
   class and potentially improve its performance in identifying truly high-risk loans.
 * The stages of the machine learning process of this analysis include the following:
-  Data Loading: loading the lending data CSV file into a pandas dataframe.
-  Data Preprocessing: Separating the labels (target variable) and features (input variables) and splitting the data into training and testing sets. RandomOverSampler was used to address
-  class imbalance.
-  Model Initialization: Logistic Regression model using the LogisticRegression class from the sklearn.linear_model module. A random state was assigned to ensure reproducibility in the model's behavior.
-  Model Training: Trained the Logistic Regression model using the training data. This involved using the .fit() method to allow the model to learn patterns from the data and adjust its parameters accordingly.
-  Model Evaluation: Evaluated the model's performance using various metrics. The accuracy score was calculated, generated a confusion matrix, and printed the classification report to get insights
-  into the model's precision, recall, and F1-score for each class.
-  Oversampling: Addressed the class imbalance by oversampling the training data using the RandomOverSampler from the imbalanced-learn library. This helps to improve the model's ability
-  to learn from the minority class.
-  Model Evaluation with Oversampled Data: After oversampling, I evaluated the model again using the same metrics as before. This allowed for a comparison between the model's performance
-  with and without addressing the class imbalance.
+  * Data Loading: loading the lending data CSV file into a pandas dataframe.
+    Data Preprocessing: Separating the labels (target variable) and features (input variables) and splitting the data into training and testing sets. RandomOverSampler was used to address
+    class imbalance.
+  * Model Initialization: Logistic Regression model using the LogisticRegression class from the sklearn.linear_model module. A random state was assigned to ensure reproducibility in the model's behavior.
+  * Model Training: Trained the Logistic Regression model using the training data. This involved using the .fit() method to allow the model to learn patterns from the data and adjust its parameters accordingly.
+  * Model Evaluation: Evaluated the model's performance using various metrics. The accuracy score was calculated, generated a confusion matrix, and printed the classification report to get insights
+    into the model's precision, recall, and F1-score for each class.
+  * Oversampling: Addressed the class imbalance by oversampling the training data using the RandomOverSampler from the imbalanced-learn library. This helps to improve the model's ability
+    to learn from the minority class.
+  * Model Evaluation with Oversampled Data: After oversampling, I evaluated the model again using the same metrics as before. This allowed for a comparison between the model's performance
+    with and without addressing the class imbalance.
 * LogisticRegression: This method helped in determining if the loan was classified as healthy or high-risk.
   
 ## Results
